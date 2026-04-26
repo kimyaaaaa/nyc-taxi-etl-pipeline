@@ -9,6 +9,16 @@ The pipeline extracts raw trip data, applies data cleaning and transformations, 
 
 ![ERD](docs/ERD.png)
 
+### Fact Table
+- `trips_fact`: stores transactional trip data and measures (distance, fare, duration, etc.)
+
+### Dimension Tables
+- `datetime_dim`: time breakdown (hour, weekday, weekend, etc.)
+- `location_dim`: pickup/dropoff zones with SCD tracking
+- `payment_dim`: payment types
+- `vendor_dim`: taxi vendors
+- `ratecode_dim`: rate categories
+
 ### Key Design Decisions
 
 - Star schema design with a central fact table (`trips_fact`)
