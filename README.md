@@ -7,7 +7,7 @@ This project implements an end-to-end ETL pipeline that processes NYC taxi trip 
 The pipeline extracts raw trip data, applies data cleaning and transformations, and loads it into a structured schema using fact and dimension tables.
 ## Data Model (Star Schema)
 
-![ERD](docs/erd.png)
+![ERD](docs/ERD.png)
 
 ## Pipeline Flow
 
