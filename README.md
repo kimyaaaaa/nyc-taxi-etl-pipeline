@@ -9,6 +9,14 @@ The pipeline extracts raw trip data, applies data cleaning and transformations, 
 
 ![ERD](docs/ERD.png)
 
+### Key Design Decisions
+
+- Star schema design with a central fact table (`trips_fact`)
+- Surrogate keys for consistent joins and performance
+- SCD Type 2 implemented in `location_dim`
+- Derived features: trip duration, average speed, tipping flag
+- Detailed datetime dimension for time-based analytics
+
 ## Pipeline Flow
 
 1. Extract raw parquet files (monthly NYC taxi data)
