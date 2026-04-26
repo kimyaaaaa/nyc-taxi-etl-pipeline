@@ -84,3 +84,12 @@ The pipeline is designed to handle large datasets efficiently using chunk-based 
 
 
 
+## Data Source
+
+NYC Taxi Trip Data:
+https://www.nyc.gov/site/tlc/about/tlc-trip-record-data.page
+
+This dataset contains detailed trip records including pickup/dropoff times, locations, fares, and passenger counts.
+
+
+
